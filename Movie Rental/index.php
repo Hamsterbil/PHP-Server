@@ -117,7 +117,16 @@
     <h2>Rent Movie</h2>    
     <form method='POST'>
         <label for='title'>Title:</label>
-        <input type='text' name='title'><br>
+        <select name='movie_id'>
+            <?php
+                $query = "SELECT title FROM movies";
+
+                $result = executeQuery($conn, $query);
+                while ($row = $result->fetch_assoc()) {
+                    echo "<option value='{$row['title']}'>{$row['title']}</option>";
+                }
+                ?>
+        </select><br>
 
         <label for='full_name'>Full Name:</label>
         <input type='text' name='full_name'><br>
@@ -151,7 +160,6 @@
     }
 ?>
 </div>
-
 
 <!-- ADD MOVIE ---------------------------------->
 <div class="signup-form">
