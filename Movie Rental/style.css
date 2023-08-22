@@ -1,40 +1,53 @@
+body {
+    background-color:dimgrey;
+}
+
 table {
     border-collapse: collapse;
     width: 100%;
-    border: 1px solid #ddd;
+    border: 2px solid black;
 }
 
 th, td {
     text-align: left;
     padding: 8px;
+    background-color: #f7f7f7;
 }
 
 th {
-    background-color: #f2f2f2;
+    background-color: #2d2d2d;
+    color: white;
 }
 
-.signup-form {
+#tableTitle {
+    margin-bottom: 15px;
+    color: white
+}
+
+.edit-form {
     background-color: #f7f7f7;
     padding: 20px;
     border-radius: 5px;
     margin-bottom: 20px;
+    border: 2px solid black;
 }
 
-.signup-form h2 {
-    margin-bottom: 15px;
+.edit-form h2 {
+    margin-bottom: 20px;
+    margin-top: 0px;
 }
 
-.signup-form label {
+.edit-form label {
     display: block;
     margin-bottom: 5px;    
 }
 
-.signup-form select,
-.signup-form input[type="text"],
-.signup-form input[type="number"],
-.signup-form input[type="email"],
-.signup-form input[type="password"],
-.signup-form input[type="decimal"] {
+.edit-form select,
+.edit-form input[type="text"],
+.edit-form input[type="number"],
+.edit-form input[type="email"],
+.edit-form input[type="password"],
+.edit-form input[type="decimal"] {
     width: 100%;
     padding: 8px;
     margin-bottom: 10px;
@@ -43,13 +56,13 @@ th {
     transition: border-color 0.3s;
 }
 
-.signup-form select:focus,
-.signup-form input:focus {
+.edit-form select:focus,
+.edit-form input:focus {
     border-color: #5f9ea0;
     outline: none;
 }
 
-.signup-form input[type="submit"] {
+.edit-form input[type="submit"] {
     background-color: #5f9ea0;
     color: white;
     padding: 10px 20px;
@@ -58,7 +71,7 @@ th {
     cursor: pointer;
 }
 
-.signup-form input[type="submit"]:hover {
+.edit-form input[type="submit"]:hover {
     background-color: #2d6868;
 }
 

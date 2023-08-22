@@ -1,4 +1,4 @@
-<h2>Membership Information</h2>
+<h2 id="tableTitle">Membership Information</h2>
 <table>
     <tr>
         <th>Full Name</th>

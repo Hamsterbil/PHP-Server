@@ -1,4 +1,4 @@
-<h2>Movies</h2>
+<h2 id="tableTitle">Movies</h2>
 <table>
     <tr>
         <th>Title</th>
