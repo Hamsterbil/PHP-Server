@@ -12,10 +12,11 @@
 
         $result = executeQuery($conn, $query);
         while ($row = $result->fetch_assoc()) {
-            echo "<tr>";
-            echo "<td>{$row['title']}</td>";
-            echo "<td>{$row['full_name']}</td>";
-            echo "</tr>";
+            echo
+            "<tr>
+             <td>{$row['title']}</td>
+             <td>{$row['full_name']}</td>
+             </tr>";
         }    
     ?>
 </table>

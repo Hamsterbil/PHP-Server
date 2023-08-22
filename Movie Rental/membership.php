@@ -15,13 +15,14 @@
         $result = executeQuery($conn, $query);
         // Insert data as table rows if no error
         while ($row = $result->fetch_assoc()) {
-            echo "<tr>";
-            echo "<td>{$row['full_name']}</td>";
-            echo "<td>{$row['salutation']}</td>";
-            echo "<td>{$row['age']}</td>";
-            echo "<td>{$row['email']}</td>";
-            echo "<td>{$row['phone_number']}</td>";
-            echo "</tr>";
+            echo 
+            "<tr>
+             <td>{$row['full_name']}</td>
+             <td>{$row['salutation']}</td>
+             <td>{$row['age']}</td>
+             <td>{$row['email']}</td>
+             <td>{$row['phone_number']}</td>
+             </tr>";
         }        
     ?>
 </table>

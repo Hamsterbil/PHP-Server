@@ -11,12 +11,13 @@
 
         $result = executeQuery($conn, $query);
         while ($row = $result->fetch_assoc()) {
-            echo "<tr>";
-            echo "<td>{$row['title']}</td>";
-            echo "<td>{$row['release_year']}</td>";
-            echo "<td>{$row['genre']}</td>";
-            echo "<td>\${$row['rental_price']}</td>";
-            echo "</tr>";
+            echo
+            "<tr>
+             <td>{$row['title']}</td>
+             <td>{$row['release_year']}</td>
+             <td>{$row['genre']}</td>
+             <td>\${$row['rental_price']}</td>
+             </tr>";
         }    
     ?>
 </table>
